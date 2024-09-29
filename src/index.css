@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.shadow-top {
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Hanya bayangan di atas */
+}
