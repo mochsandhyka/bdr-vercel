@@ -8,7 +8,7 @@ import { Hero } from "./component/Hero";
 import { About } from "./component/About";
 import { Contact } from "./component/Contact";
 import { Navbar } from "./component/Navbar";
-import { FormContact } from "./component/ContactUs";
+import { DestinationSlider } from "./component/Country";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
             <LangToggle />
             <div>
               <Hero />
+              <DestinationSlider />
               <About />
               <WhatsApp />
               <Office />

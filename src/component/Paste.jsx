@@ -1,89 +1,91 @@
-<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a
-      href="https://flowbite.com/"
-      className="flex items-center space-x-3 rtl:space-x-reverse"
-    >
-      <img
-        src="https://flowbite.com/docs/images/logo.svg"
-        className="h-8"
-        alt="Flowbite Logo"
-      />
-      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-        Flowbite
-      </span>
-    </a>
-    <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <button
-        type="button"
-        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-      >
-        Get started
-      </button>
-      <button
-        data-collapse-toggle="navbar-sticky"
-        type="button"
-        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-sticky"
-        aria-expanded="false"
-      >
-        <span className="sr-only">Open main menu</span>
-        <svg
-          class="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"
-          />
-        </svg>
-      </button>
-    </div>
-    <div
-      className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-      id="navbar-sticky"
-    >
-      <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a
-            href="#"
-            className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-            aria-current="page"
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-          >
-            About
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-          >
-            Services
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>;
+[
+  "Malaysia adalah negara yang kaya akan budaya, sejarah, dan keindahan alam, terletak di Asia Tenggara. Negara ini dikenal sebagai tujuan menarik bagi tenaga kerja asing karena stabilitas ekonominya, kemajuan infrastruktur, serta tingginya permintaan tenaga kerja di berbagai sektor. Salah satu keuntungan bekerja di Malaysia adalah keberagaman budayanya, yang mencakup perpaduan budaya Melayu, Tionghoa, India, dan komunitas internasional lainnya. Hal ini tercermin dalam makanan, tradisi, serta kehidupan sehari-hari. Selain itu, biaya hidup di Malaysia relatif terjangkau dibandingkan dengan negara-negara tetangga seperti Singapura atau Hong Kong, meskipun kota-kota besar seperti Kuala Lumpur semakin berkembang.",
+  "Malaysia juga memiliki sistem kesehatan yang cukup baik dan terjangkau, serta berbagai pilihan pendidikan berkualitas bagi tenaga kerja asing yang membawa keluarga. Sebagai salah satu pusat ekonomi utama di Asia Tenggara, Malaysia menawarkan banyak kesempatan karier, terutama di sektor manufaktur, teknologi informasi, perhotelan, dan konstruksi, dengan banyak perusahaan multinasional yang beroperasi di negara ini. Saat tidak bekerja, Malaysia menawarkan berbagai tempat wisata menarik, mulai dari pantai-pantai indah di Langkawi dan Penang, hingga hutan hujan tropis di Taman Negara dan situs bersejarah di Malaka. Secara keseluruhan, Malaysia adalah pilihan menarik bagi mereka yang ingin mengembangkan karier sambil menikmati kehidupan multikultural di lingkungan yang aman dan modern.",
+];
+[
+  "Malaysia is a country rich in culture, history, and natural beauty, located in Southeast Asia. It is known as an attractive destination for foreign workers due to its economic stability, advanced infrastructure, and high demand for labor in various sectors. One of the advantages of working in Malaysia is its cultural diversity, which includes a blend of Malay, Chinese, Indian, and other international communities. This diversity is reflected in the food, traditions, and daily life. Additionally, the cost of living in Malaysia is relatively affordable compared to neighboring countries like Singapore or Hong Kong, although major cities like Kuala Lumpur are rapidly developing.",
+  "Malaysia also has a reasonably good and affordable healthcare system, as well as a variety of quality educational options for foreign workers bringing their families. As one of the main economic hubs in Southeast Asia, Malaysia offers numerous career opportunities, especially in the manufacturing, information technology, hospitality, and construction sectors, with many multinational companies operating in the country. When not working, Malaysia offers a wide range of attractive tourist destinations, from the beautiful beaches of Langkawi and Penang to the tropical rainforests of Taman Negara and historical sites in Malacca. Overall, Malaysia is an appealing choice for those looking to advance their careers while enjoying a multicultural lifestyle in a safe and modern environment.",
+];
+
+[
+  "Singapura adalah negara kota yang dinamis yang terletak di Asia Tenggara, dikenal karena perkembangan ekonominya yang mengesankan dan standar hidup yang tinggi. Singapura menjadi tujuan utama bagi pekerja asing, terutama karena ekonominya yang kuat, infrastruktur yang baik, dan penekanan yang tinggi pada teknologi serta inovasi. Bekerja di Singapura menawarkan banyak keuntungan, termasuk gaji yang kompetitif, tarif pajak yang rendah, dan gaya hidup kosmopolitan.",
+  "Negara kota ini terkenal dengan lingkungan multikulturalnya, di mana berbagai komunitas etnis, termasuk Tionghoa, Melayu, India, dan ekspatriat dari seluruh dunia, hidup berdampingan secara harmonis. Keberagaman ini tercermin dalam berbagai kuliner, festival budaya, dan kawasan yang hidup. Selain itu, Singapura dikenal karena standar keselamatan dan kebersihan yang ketat, menjadikannya tempat yang menarik untuk tinggal dan bekerja.",
+  "Negara ini menawarkan sistem kesehatan yang baik dan pendidikan berkualitas tinggi, menarik bagi ekspatriat yang membawa keluarga mereka. Singapura juga menjadi rumah bagi banyak perusahaan multinasional, menyediakan banyak peluang kerja di berbagai sektor, termasuk keuangan, teknologi informasi, bioteknologi, dan logistik. Selain peluang profesional, Singapura menawarkan berbagai aktivitas rekreasi, mulai dari taman dan kebun yang indah hingga pengalaman belanja dan bersantap kelas dunia. Secara keseluruhan, Singapura adalah pilihan yang sangat baik bagi individu yang mencari kemajuan karier dalam lingkungan yang dinamis dan multikultural, sambil menikmati gaya hidup urban yang aman dan modern.",
+];
+
+[
+  "Singapore is a vibrant city-state located in Southeast Asia, known for its impressive economic development and high standard of living. It is a leading destination for foreign workers, particularly due to its robust economy, excellent infrastructure, and a strong emphasis on technology and innovation. Working in Singapore provides many benefits, including competitive salaries, a low tax rate, and a cosmopolitan lifestyle.",
+  "The city-state is celebrated for its multicultural environment, where various ethnic communities, including Chinese, Malay, Indian, and expatriates from around the world, coexist harmoniously. This diversity is reflected in its rich culinary scene, cultural festivals, and vibrant neighborhoods. Moreover, Singapore is renowned for its strict safety and cleanliness standards, making it an attractive place to live and work.",
+  "The country offers a well-developed healthcare system and high-quality education, appealing to expatriates who bring their families. Singapore is also home to numerous multinational corporations, providing a wealth of job opportunities in various sectors, including finance, information technology, biotechnology, and logistics. In addition to professional opportunities, Singapore boasts an array of leisure activities, from stunning parks and gardens to world-class shopping and dining experiences. Overall, Singapore is an excellent choice for individuals seeking career advancement in a dynamic and multicultural setting, all while enjoying a safe and modern urban lifestyle.",
+];
+
+[
+  "Hong Kong adalah sebuah wilayah administratif khusus yang terletak di pesisir selatan Tiongkok, terkenal dengan pemandangan kota yang megah dan sebagai pusat keuangan global. Dikenal sebagai Kota yang Tidak Pernah Tidur, Hong Kong menawarkan kombinasi unik antara tradisi dan modernitas. Budaya yang kaya, perpaduan antara Timur dan Barat, serta kebebasan yang relatif tinggi menjadikan Hong Kong sebagai tempat yang menarik untuk bekerja dan tinggal.",
+  "Ekonomi Hong Kong sangat berkembang dan berorientasi pada perdagangan, keuangan, dan layanan. Banyak perusahaan internasional memilih Hong Kong sebagai basis operasi mereka di Asia, menawarkan banyak peluang kerja di sektor-sektor seperti perbankan, keuangan, dan teknologi. Gaji yang kompetitif dan tarif pajak yang rendah menjadi daya tarik tambahan bagi para profesional dari seluruh dunia.",
+  "Lingkungan multikultural di Hong Kong memungkinkan individu dari berbagai latar belakang untuk hidup dan bekerja bersama. Dengan berbagai festival, makanan, dan seni yang beragam, Hong Kong menawarkan pengalaman yang kaya bagi penduduknya. Selain itu, kota ini dikenal dengan sistem transportasi yang efisien, keamanan yang tinggi, dan akses mudah ke berbagai fasilitas. Bagi mereka yang mencari kemajuan karier dalam suasana yang dinamis dan internasional, Hong Kong adalah pilihan yang sangat menarik.",
+];
+
+[
+  "Hong Kong is a special administrative region located on the southern coast of China, renowned for its stunning cityscape and as a global financial hub. Known as the City That Never Sleeps, Hong Kong offers a unique blend of tradition and modernity. Its rich culture, a fusion of East and West, along with a relatively high degree of freedom, makes it an attractive place to work and live.",
+  "Hong Kong's economy is highly developed and service-oriented, focusing on trade, finance, and services. Many international companies choose Hong Kong as their base of operations in Asia, providing numerous job opportunities in sectors such as banking, finance, and technology. Competitive salaries and low tax rates further enhance its appeal for professionals from around the world.",
+  "The multicultural environment in Hong Kong allows individuals from diverse backgrounds to live and work together. With various festivals, foods, and arts, Hong Kong offers a rich experience for its residents. Additionally, the city is known for its efficient transportation system, high safety standards, and easy access to a wide range of amenities. For those seeking career advancement in a dynamic and international atmosphere, Hong Kong is an exceptionally attractive choice.",
+];
+
+[
+  "Taiwan is an island nation located in East Asia, known for its vibrant culture, beautiful landscapes, and rich history. With a mix of modern cities and traditional villages, Taiwan offers a unique blend of urban life and natural beauty, making it an attractive destination for both tourists and expatriates.",
+  "Taiwan's economy is highly developed, with a strong focus on technology, manufacturing, and services. The island is home to many global companies, especially in the electronics sector, providing numerous job opportunities for skilled professionals. The competitive salaries and favorable working conditions make Taiwan an appealing place for career growth.",
+  "The multicultural society of Taiwan is characterized by its friendly people and rich culinary heritage. From bustling night markets to stunning festivals, the island offers a diverse range of experiences for residents and visitors alike. Taiwan is also known for its excellent healthcare system, high-quality education, and efficient public transportation, ensuring a comfortable and convenient lifestyle for those who live there.",
+];
+
+[
+  "Taiwan adalah sebuah negara kepulauan yang terletak di Asia Timur, dikenal karena budayanya yang vibran, pemandangan alam yang indah, dan sejarah yang kaya. Dengan kombinasi antara kota modern dan desa tradisional, Taiwan menawarkan perpaduan unik antara kehidupan perkotaan dan keindahan alam, menjadikannya sebagai tujuan yang menarik bagi wisatawan dan ekspatriat.",
+  "Ekonomi Taiwan sangat maju, dengan fokus yang kuat pada teknologi, manufaktur, dan layanan. Pulau ini menjadi rumah bagi banyak perusahaan global, terutama di sektor elektronik, yang menyediakan banyak peluang kerja bagi para profesional terampil. Gaji yang kompetitif dan kondisi kerja yang menguntungkan menjadikan Taiwan sebagai tempat yang menarik untuk pertumbuhan karier.",
+  "Masyarakat multikultural Taiwan ditandai oleh orang-orangnya yang ramah dan warisan kuliner yang kaya. Dari pasar malam yang ramai hingga festival yang menakjubkan, pulau ini menawarkan beragam pengalaman bagi penduduk dan pengunjung. Taiwan juga dikenal dengan sistem kesehatan yang sangat baik, pendidikan berkualitas tinggi, dan transportasi publik yang efisien, memastikan gaya hidup yang nyaman dan praktis bagi mereka yang tinggal di sana.",
+];
+
+[
+  "Japan is an archipelago located in East Asia, famous for its unique blend of tradition and cutting-edge technology. The country boasts beautiful landscapes, from cherry blossoms in spring to the stunning mountains of Hokkaido, providing a picturesque backdrop for daily life.",
+  "Japan's economy is one of the most advanced globally, driven by industries such as technology, robotics, and automotive manufacturing. International companies often establish offices in Japan due to its innovation and skilled workforce, leading to numerous job opportunities in various fields.",
+  "The culture of Japan is rich and diverse, offering everything from ancient temples and shrines to modern skyscrapers. Festivals, traditional arts, and world-renowned cuisine like sushi and ramen contribute to a vibrant lifestyle. With a focus on respect and community, living in Japan provides a unique and enriching experience.",
+];
+
+[
+  "Jepang adalah sebuah kepulauan yang terletak di Asia Timur, terkenal karena perpaduan unik antara tradisi dan teknologi mutakhir. Negara ini memiliki pemandangan yang indah, mulai dari bunga sakura di musim semi hingga gunung-gunung menakjubkan di Hokkaido, memberikan latar belakang yang indah untuk kehidupan sehari-hari.",
+  "Ekonomi Jepang adalah salah satu yang paling maju di dunia, didorong oleh industri seperti teknologi, robotika, dan manufaktur otomotif. Perusahaan internasional sering mendirikan kantor di Jepang karena inovasi dan tenaga kerja yang terampil, yang menghasilkan banyak peluang kerja di berbagai bidang.",
+  "Budaya Jepang sangat kaya dan beragam, menawarkan segala sesuatu mulai dari kuil dan candi kuno hingga gedung pencakar langit modern. Festival, seni tradisional, dan masakan yang terkenal di dunia seperti sushi dan ramen berkontribusi pada gaya hidup yang dinamis. Dengan fokus pada rasa hormat dan komunitas, tinggal di Jepang memberikan pengalaman yang unik dan memperkaya.",
+];
+
+[
+  "Poland is a country located in Central Europe, known for its rich history and diverse cultural heritage. From the historic city of Krakow, with its stunning medieval architecture, to the natural beauty of the Tatra Mountains, Poland offers a blend of urban and outdoor experiences.",
+  "The Polish economy is growing steadily, with a strong emphasis on manufacturing, technology, and services. Many multinational companies have established operations in Poland, creating job opportunities for both local and international professionals across various sectors.",
+  "Poland's vibrant culture is showcased through its festivals, traditional music, and delicious cuisine. With a warm and welcoming atmosphere, Poland is an attractive destination for expatriates looking for a unique living and working experience in Europe.",
+];
+
+[
+  "Polandia adalah negara yang terletak di Eropa Tengah, terkenal karena sejarahnya yang kaya dan warisan budaya yang beragam. Dari kota bersejarah Krakow dengan arsitektur abad pertengahannya yang menakjubkan, hingga keindahan alam Pegunungan Tatra, Polandia menawarkan perpaduan pengalaman perkotaan dan alam.",
+  "Ekonomi Polandia tumbuh secara stabil, dengan penekanan yang kuat pada manufaktur, teknologi, dan layanan. Banyak perusahaan multinasional telah mendirikan operasi di Polandia, menciptakan peluang kerja bagi profesional lokal dan internasional di berbagai sektor.",
+  "Budaya Polandia yang semarak ditampilkan melalui festival, musik tradisional, dan masakan lezat. Dengan suasana yang hangat dan ramah, Polandia adalah tujuan yang menarik bagi ekspatriat yang mencari pengalaman hidup dan bekerja yang unik di Eropa.",
+];
+[
+  "Greece is a southeastern European country known for its ancient history, stunning islands, and rich cultural heritage. Home to iconic historical sites like the Acropolis, Greece offers a unique blend of history and modern living, making it an appealing destination.",
+  "The Greek economy, primarily driven by tourism, shipping, and agriculture, provides numerous job opportunities in various sectors, particularly in hospitality and services. Many international companies also invest in Greece, enhancing the job market for locals and expatriates.",
+  "Greek culture is vibrant and diverse, with a strong emphasis on family, tradition, and community. The country is famous for its festivals, delicious Mediterranean cuisine, and friendly locals, providing a rich and enjoyable living experience for those who choose to work in Greece.",
+];
+
+[
+  "Yunani adalah negara di Eropa Tenggara yang terkenal dengan sejarah kunonya, pulau-pulaunya yang menakjubkan, dan warisan budaya yang kaya. Menjadi rumah bagi situs-situs bersejarah ikonis seperti Akropolis, Yunani menawarkan perpaduan unik antara sejarah dan kehidupan modern, menjadikannya tujuan yang menarik.",
+  "Ekonomi Yunani, yang terutama didorong oleh pariwisata, perkapalan, dan pertanian, menyediakan banyak peluang kerja di berbagai sektor, terutama di bidang perhotelan dan layanan. Banyak perusahaan internasional juga berinvestasi di Yunani, meningkatkan pasar kerja bagi penduduk lokal dan ekspatriat.",
+  "Budaya Yunani yang semarak dan beragam sangat menekankan pada keluarga, tradisi, dan komunitas. Negara ini terkenal dengan festival-festivalnya, masakan Mediterania yang lezat, dan penduduk lokal yang ramah, memberikan pengalaman hidup yang kaya dan menyenangkan bagi mereka yang memilih untuk bekerja di Yunani.",
+];
+
+[
+  "Turkey is a transcontinental country located at the crossroads of Europe and Asia, known for its rich cultural diversity and historical significance. With its stunning landscapes, from the beaches of the Aegean to the unique rock formations of Cappadocia, Turkey offers a variety of experiences for visitors and residents alike.",
+  "The Turkish economy is one of the largest in the world, with key industries including textiles, automotive, and tourism. The growing job market, combined with competitive salaries and a lower cost of living, attracts many professionals from various backgrounds to seek opportunities in Turkey.",
+  "Turkish culture is characterized by its hospitality, vibrant traditions, and delicious cuisine. From traditional music and dance to its famous tea and kebabs, living in Turkey provides a rich cultural experience that is both unique and welcoming for expatriates.",
+];
+
+[
+  "Turki adalah negara transkontinental yang terletak di persimpangan Eropa dan Asia, dikenal karena keragaman budaya yang kaya dan signifikansi sejarahnya. Dengan pemandangan yang menakjubkan, mulai dari pantai-pantai di Egeo hingga formasi batuan unik di Cappadocia, Turki menawarkan berbagai pengalaman bagi pengunjung dan penduduknya.",
+  "Ekonomi Turki adalah salah satu yang terbesar di dunia, dengan industri kunci termasuk tekstil, otomotif, dan pariwisata. Pasar kerja yang terus berkembang, dipadukan dengan gaji yang kompetitif dan biaya hidup yang lebih rendah, menarik banyak profesional dari berbagai latar belakang untuk mencari peluang di Turki.",
+  "Budaya Turki ditandai oleh keramahan, tradisi yang semarak, dan masakan yang lezat. Dari musik dan tarian tradisional hingga teh dan kebab yang terkenal, tinggal di Turki memberikan pengalaman budaya yang kaya yang unik dan ramah bagi ekspatriat.",
+];

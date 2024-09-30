@@ -104,7 +104,7 @@ export const About = () => {
         ))}
         <div className="container mx-auto px-4 gap-1">
           <Swiper
-            navigation
+            
             pagination={{ clickable: true }}
             modules={[Navigation, Pagination, Autoplay]}
             className="mySwiper"

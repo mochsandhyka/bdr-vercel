@@ -14,6 +14,8 @@ export function Navbar() {
   const menuItems = {
     en: [
       { label: "Home", href: "home" },
+      { label: "Destinations", href: "destinations" },
+
       {
         label: "About",
         href: "about",
@@ -27,6 +29,8 @@ export function Navbar() {
     ],
     id: [
       { label: "Beranda", href: "home" },
+      { label: "Destinasi", href: "destinations" },
+
       {
         label: "Tentang",
         href: "about",
