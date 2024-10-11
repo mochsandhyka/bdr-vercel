@@ -4,7 +4,7 @@ import whatsappLogo from "../assets/img/logowa2.png";
 export const WhatsApp = () => {
   return (
     <a
-      href="https://wa.me/+6289505670700" // Replace with your WhatsApp number
+      href="https://wa.me/+6285236936801"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 p-2 z-20 bg-green-600 rounded-full"

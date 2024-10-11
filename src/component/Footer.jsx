@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa"; // Import 
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6 mt-8">
+    <footer className=" bg-white text-black dark:bg-gray-900 dark:text-white py-6">
       <div className="container mx-auto text-center">
         <h2 className="text-lg font-bold mb-2">
           PT. Bina <span className="text-red-500">Dinamita</span> Rama

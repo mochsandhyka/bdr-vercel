@@ -1,5 +1,7 @@
-import hero from "../assets/img/bg-hero.png";
 import { useLanguage } from "../context/LanguageContext";
+
+const heroImg =
+  "https://res.cloudinary.com/dlmfx6nxx/image/upload/v1727959321/hero-bg_n2fybp.png";
 
 export const Hero = () => {
   const { language } = useLanguage();
@@ -7,20 +9,33 @@ export const Hero = () => {
     en: {
       title: [
         "Bina",
-        <span className="text-white">Dinamita</span>,
+        <span className="text-white" key="1">
+          Dinamita
+        </span>,
         "Rama Ltd.",
       ],
       description2: ["Placement Agencies"],
       description1: [
         "Indonesia",
-        <span className="text-red-500"> Migrant Workers</span>,
+        <span className="text-red-500" key="2">
+          {" "}
+          Migrant Workers
+        </span>,
       ],
     },
     id: {
-      title: ["PT Bina", <span className="text-white">Dinamita</span>, "Rama"],
+      title: [
+        "PT Bina",
+        <span className="text-white" key="1">
+          Dinamita
+        </span>,
+        "Rama",
+      ],
       description1: ["Perusahaan Penempatan Kerja"],
       description2: [
-        <span className="text-red-500">Migran</span>,
+        <span className="text-red-500" key="2">
+          Migran
+        </span>,
         " Indonesia",
       ],
     },
@@ -35,7 +50,7 @@ export const Hero = () => {
       <div
         className="absolute top-0 left-0 w-full h-full"
         style={{
-          backgroundImage: `url(${hero})`,
+          backgroundImage: `url(${heroImg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -57,12 +72,21 @@ export const Hero = () => {
       </h1>
 
       <h5 className="text-white text-base md:text-3xl normal-case z-20 tracking-wide">
-        {content[language].description1}{" "}
-        {/* Menampilkan elemen pertama dari description1 */}
+        {content[language].description1.map((part, index) => (
+          <span key={index}>
+            {part}
+            {index < content[language].description1.length - 1 && " "}
+          </span>
+        ))}
       </h5>
+
       <h5 className="text-white text-base md:text-3xl normal-case z-20 tracking-wide">
-        {content[language].description2}{" "}
-        {/* Menampilkan elemen kedua dari description2 */}
+        {content[language].description2.map((part, index) => (
+          <span key={index}>
+            {part}
+            {index < content[language].description2.length - 1 && " "}
+          </span>
+        ))}
       </h5>
     </div>
   );

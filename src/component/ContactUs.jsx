@@ -1,4 +1,4 @@
-import imageContact from "../assets/img/image-contact.png";
+import imageContact from "../assets/img/contact/contact.png";
 
 export const FormContact = () => {
   return (
@@ -22,6 +22,7 @@ export const FormContact = () => {
                     className="w-full bg-shitw text-dark mb-4 lg:mb-0  p-3 rounded-xl focus:outline-none focus:ring-indigo-500 focus:ring-1 focus:border-indigo-500"
                     id="name"
                     placeholder="Name"
+                    autoComplete="name"
                   />
 
                   <input
@@ -29,6 +30,7 @@ export const FormContact = () => {
                     className="w-full bg-shitw text-dark p-3 rounded-xl focus:outline-none focus:ring-indigo-500 focus:ring-2 focus:border-indigo-500"
                     id="email"
                     placeholder="Email"
+                    autoComplete="email"
                   />
                 </div>
 
@@ -42,7 +44,7 @@ export const FormContact = () => {
                 <textarea
                   type="text"
                   className="w-full h-32 bg-shitw text-dark p-3 rounded-xl focus:outline-none focus:ring-indigo-500 focus:ring-1 focus:border-indigo-500"
-                  id="name"
+                  id="emailMessage"
                   placeholder="Message"
                 ></textarea>
                 <button className="text-white font-semibold text-base bg-black w-full lg:w-2/5 rounded-full px-1 py-2 ">
@@ -50,11 +52,11 @@ export const FormContact = () => {
                 </button>
               </div>
             </form>
-            <div className="right -mt-[220px] ml-10  w-full hidden lg:block ">
+            <div className="right -mt-[220px] ml-10 w-full hidden lg:block">
               <img
                 src={imageContact}
                 alt="image-contact"
-                className="w-[800px] h-[650px] xl:w-[637px] flex items-end z-10 -ml-22  xl:mr-0  top-0 sm:hidden lg:block" // Ubah tinggi dan lebar sesuai kebutuhan
+                className="w-full h-full object-cover flex items-end z-10 -ml-22 xl:mr-0 top-0 sm:hidden lg:block"
               />
             </div>
           </div>

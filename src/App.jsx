@@ -5,11 +5,11 @@ import { LangToggle } from "./component/LangToggle";
 import { Office } from "./component/Office";
 import { WhatsApp } from "./component/WhatsApp";
 import { Hero } from "./component/Hero";
-import { About } from "./component/About";
 import { Contact } from "./component/Contact";
-import { Navbar } from "./component/Navbar";
-import { DestinationSlider } from "./component/Country";
-
+import { Navbar } from "./component/NewNavbar";
+import { NewAbout } from "./component/NewAbout";
+import { NewDestination } from "./component/Negara";
+import { Footer } from "./component/Footer";
 function App() {
   return (
     <>
@@ -20,11 +20,12 @@ function App() {
             <LangToggle />
             <div>
               <Hero />
-              <DestinationSlider />
-              <About />
+              <NewDestination />
+              <NewAbout></NewAbout>
               <WhatsApp />
               <Office />
               <Contact />
+              <Footer />
             </div>
           </div>
         </LanguageProvider>
