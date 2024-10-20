@@ -43,68 +43,38 @@ export const Carousel = () => {
 
   // Title yang konsisten untuk setiap slide
   const title = {
-    en: (
-      <div className="tracking-wider text-2xl">
-        -Bina{" "}
-        <span className="text-white" key="1">
-          Dinamita{" "}
-        </span>
-        Rama LTD.
-      </div>
-    ),
-    id: (
-      <div className="tracking-wider text-2xl">
-        -PT Bina{" "}
-        <span className="text-white" key="1">
-          Dinamita{" "}
-        </span>
-        Rama
-      </div>
-    ),
+    en: "-Bina Dinamita Rama LTD.",
+    id: "-PT Bina Dinamita Rama",
   };
 
   const slideTexts = [
     {
       english: (
-        <div className="tracking-wider">
-          Indonesia
-          <span className="text-red-500" key="2">
-            {" "}
-            Migrant Workers
+        <div className="tracking-wider text-2xl">
+          Bina{" "}
+          <span className="text-white" key="1">
+            Dinamita{" "}
           </span>
-          <br />
-          <span className="text-white">Placement Agencies</span>
+          Rama LTD.
         </div>
       ),
       indonesian: (
         <div className="tracking-wider text-2xl">
-          Perusahaan Penempatan Kerja
-          <br />
-          <span className="text-red-500" key="2">
-            {" "}
-            Migran{" "}
+          PT Bina{" "}
+          <span className="text-white" key="1">
+            Dinamita{" "}
           </span>
-          <span className="text-white">Indonesia</span>
+          Rama
         </div>
       ),
     },
     {
-      english: (
-        <div>
-          Collaboration and Partnership <br />
-          for a <span className="text-red-500">Better Future</span>
-        </div>
-      ),
-      indonesian: "Kolaborasi dan Kemitraan untuk masa depan yang lebih baik",
+      english: "Explore the Beauty in Slide Two!",
+      indonesian: "Jelajahi Keindahan di Slide Kedua!",
     },
     {
-      english: (
-        <div>
-          Creating the Future
-          <br /> with <span className="text-red-500">Professionalism</span>
-        </div>
-      ),
-      indonesian: "Membangun masa depan dengan profesionalisme",
+      english: "Join Us in the Third Slide!",
+      indonesian: "Bergabunglah Bersama Kami di Slide Ketiga!",
     },
   ];
 
@@ -153,7 +123,7 @@ export const Carousel = () => {
 
                 {/* Title yang konsisten untuk setiap slide */}
                 <h1
-                  className={`absolute top-1/3 left-1/2 text-3xl font-bold text-green-400 -translate-x-1/2 -translate-y-1/2 text-center z-[30] uppercase tracking-wide transition-all duration-1000 ease-in-out ${
+                  className={`absolute top-1/4 left-1/2 text-3xl font-bold text-white -translate-x-1/2 -translate-y-1/2 text-center z-[30] uppercase tracking-wide transition-all duration-700 ease-in-out ${
                     isAnimating && activeIndex === index
                       ? "opacity-100 translate-y-0" // Animasi masuk
                       : "opacity-0 translate-y-[-50px]" // Animasi keluar
@@ -164,7 +134,7 @@ export const Carousel = () => {
 
                 {/* Teks konten untuk setiap slide */}
                 <h2
-                  className={`absolute top-1/2 left-1/2 text-5xl -translate-x-1/2 -translate-y-1/2 text-white text-center z-[30] tracking-wide ${
+                  className={`absolute top-1/2 left-1/2 text-2xl -translate-x-1/2 -translate-y-1/2 text-green-400 text-center z-[30] uppercase tracking-wide ${
                     isAnimating && activeIndex === index
                       ? "bounce-in-animation"
                       : ""

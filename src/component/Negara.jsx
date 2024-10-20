@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import { useEffect } from "react";
 import { FaDollarSign, FaUserTie, FaTimes } from "react-icons/fa";
 import "swiper/swiper-bundle.css";
 import { useLanguage } from "../context/LanguageContext";
 import destinations from "./data/DestinationsData";
-// const MAX_DESCRIPTION_LENGTH = 280;
+import {
+  GreenButton,
+  Title,
+  SubTitle,
+  Text,
+  ReadMore,
+} from "../component/Component";
 const MAX_DESCRIPTION_LENGTH = 1000;
 
 const truncateDescription = (description) => {
@@ -91,19 +97,25 @@ export const NewDestination = () => {
   };
 
   return (
+    // Untuk Navbar
     <div
       id="destinations"
       className=" bg-gradient-to-t from-slate-200 to-white min-h-screen p-4"
     >
+      {/* Title Berwarna Hijau */}
       <div className="container pt-16 m-4 mx-auto xl:pt-8  ">
-        <h1 className="  text-4xl font-black mb-4 text-center text-green-600 md:pt-0">
-          {language === "id" ? "Destinasi Kerja" : "Work Destination"}
-        </h1>
-        <h2 className="text-xs font-semibold mb-6 pb-12 mt-0 text-center text-[#717171] md:mb-0">
-          {language === "id"
-            ? "Letak mitra yang bekerja sama dengan perusahaan kami dalam kegiatan penyaluran tenaga kerja"
-            : "Location of our company’s partner in human resource distribution"}
-        </h2>
+        <Title
+          text={language === "id" ? "Destinasi Kerja" : "Work Destination"}
+        />
+        {/* Sub Title text kecil dibawah title */}
+        <SubTitle
+          text={
+            language === "id"
+              ? "Letak mitra yang bekerja sama dengan perusahaan kami dalam kegiatan penyaluran tenaga kerja"
+              : "Location of our company’s partner in human resource distribution"
+          }
+        />
+        {/* Carosel negara */}
         <Swiper
           pagination={{ clickable: true }}
           spaceBetween={50}
@@ -116,6 +128,7 @@ export const NewDestination = () => {
             disableOnInteraction: false,
           }}
         >
+          {/* Mapping Destinasi Kerja */}
           {destinations.map((country, index) => (
             <SwiperSlide key={index}>
               <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center">
@@ -124,63 +137,51 @@ export const NewDestination = () => {
                   alt={country[language === "id" ? "nameId" : "nameEn"]}
                   className="w-full rounded-lg shadow-lg "
                 />
+                {/* Judul Destinasi Kerja Hitam */}
                 <div className="mx-3 p-6">
                   <h2 className="block text-2xl font-bold mb-3">
                     {language === "id" ? country.nameId : country.nameEn}
                   </h2>
-                  <p className="block md:hidden mb-4 text-justify text-sm font-semibold indent-3 text-slate-500 tracking-wide leading-relaxed">
-                    {language === "id"
-                      ? truncateDescription(country.descId[0])
-                      : truncateDescription(country.descEn[0])}
-                    <span
-                      onClick={() => handleReadMore(country)}
-                      className="text-green-500 pb-10 text-sm font-bold cursor-pointer mt-4"
-                    >
-                      {language === "id" ? (
-                        <>
-                          <br />
-                          Baca Selengkapnya»
-                        </>
-                      ) : (
-                        <>
-                          <br />
-                          Read More»
-                        </>
-                      )}
-                    </span>
-                  </p>
+                  {/* Deskripsi Text Negara Mobile*/}
+                  <div className="block sm:hidden mb-4 text-justify text-sm font-semibold indent-3 text-slate-500 tracking-wide leading-relaxed">
+                    <Text
+                      text={
+                        language === "id"
+                          ? truncateDescription(country.descId[0])
+                          : truncateDescription(country.descEn[0])
+                      }
+                    />
+                    <ReadMore
+                      clicked={() => handleReadMore(country)}
+                      id="Baca Selengkapnya  »"
+                      en="Read More  »"
+                    />
+                  </div>
+                  {/* Deskripsi Text Negara Dekstop*/}
                   <div className="hidden md:block text-justify text-sm font-semibold indent-3 text-slate-500 leading-relaxed 2xl:text-lg 2xl:pb-2">
-                    {language === "id"
-                      ? country.descId.map((desc, index) => (
-                          <p className="mb-2" key={index}>
-                            {desc}
-                          </p>
-                        ))
-                      : country.descEn.map((desc, index) => (
-                          <p className="mb-2" key={index}>
-                            {desc}
-                          </p>
-                        ))}
-                    <span
-                      onClick={() => handleJob(country)}
-                      className="text-green-500 pb-10 text-sm font-bold cursor-pointer mt-4"
-                    >
-                      {language === "id"
-                        ? "Lihat Lowongan Kerja »"
-                        : "View Job Vacancies »"}
-                    </span>
+                    {(language === "id" ? country.descId : country.descEn).map(
+                      (desc, index) => (
+                        <p className="mb-2" key={index}>
+                          {desc}
+                        </p>
+                      )
+                    )}
+                    <ReadMore
+                      clicked={() => handleJob(country)}
+                      id="Lihat Lowongan Kerja »"
+                      en="View Job Vacancies »"
+                    />
                   </div>
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-
+        {/* Hingga Sini */}
         {/* Popup Modal */}
-
         {selectedCountry && (
           <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
-            <div className="block xl:bg-slate-200 bg-white p-8 rounded-lg max-w-lg w-full max-h-[80vh] overflow-y-auto xl:min-h-[80%] min-w-[80%]">
+            <div className="block md:bg-slate-200 bg-white p-8 rounded-lg max-w-lg w-full max-h-[80vh] overflow-y-auto xl:min-h-[80%] min-w-[80%]">
               {/* Gambar negara */}
               <img
                 src={selectedCountry.img}
