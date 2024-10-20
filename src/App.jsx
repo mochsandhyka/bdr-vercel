@@ -12,6 +12,7 @@ import { NewDestination } from "./component/Negara";
 import { Footer } from "./component/Footer";
 import { Carousel } from "./component/Hero";
 import { Preloader } from "./component/Preloader";
+import { MapComponent } from "./component/Maps";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <NewAbout />
             <WhatsApp />
             <Office />
+            <MapComponent />
             <Contact />
             <Footer />
           </div>

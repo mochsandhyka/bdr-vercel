@@ -28,7 +28,7 @@ export const ReadMore = ({ clicked, id, en }) => {
 
 export const Title = ({ text }) => {
   return (
-    <h1 className="text-4xl font-black mb-4 text-center text-green-600 md:pt-0">
+    <h1 className="text-4xl uppercase font-black mb-4 text-center text-green-600 md:pt-0">
       {text}
     </h1>
   );

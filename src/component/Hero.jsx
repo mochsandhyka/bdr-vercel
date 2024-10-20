@@ -44,7 +44,7 @@ export const Carousel = () => {
   // Title yang konsisten untuk setiap slide
   const title = {
     en: (
-      <div className="tracking-wider text-2xl">
+      <div className="tracking-wider ">
         -Bina{" "}
         <span className="text-white" key="1">
           Dinamita{" "}
@@ -53,7 +53,7 @@ export const Carousel = () => {
       </div>
     ),
     id: (
-      <div className="tracking-wider text-2xl">
+      <div className="tracking-wider ">
         -PT Bina{" "}
         <span className="text-white" key="1">
           Dinamita{" "}
@@ -66,7 +66,7 @@ export const Carousel = () => {
   const slideTexts = [
     {
       english: (
-        <div className="tracking-wider">
+        <div className="tracking-wider ">
           Indonesia
           <span className="text-red-500" key="2">
             {" "}
@@ -77,7 +77,7 @@ export const Carousel = () => {
         </div>
       ),
       indonesian: (
-        <div className="tracking-wider text-2xl">
+        <div className="tracking-wider">
           Perusahaan Penempatan Kerja
           <br />
           <span className="text-red-500" key="2">
@@ -153,7 +153,7 @@ export const Carousel = () => {
 
                 {/* Title yang konsisten untuk setiap slide */}
                 <h1
-                  className={`absolute top-1/3 left-1/2 text-3xl font-bold text-green-400 -translate-x-1/2 -translate-y-1/2 text-center z-[30] uppercase tracking-wide transition-all duration-1000 ease-in-out ${
+                  className={`absolute top-1/3 left-1/2 text-xs md:text-3xl font-bold text-green-400 -translate-x-1/2 -translate-y-1/2 text-center z-[30] uppercase tracking-wide transition-all duration-1000 ease-in-out ${
                     isAnimating && activeIndex === index
                       ? "opacity-100 translate-y-0" // Animasi masuk
                       : "opacity-0 translate-y-[-50px]" // Animasi keluar
@@ -164,7 +164,7 @@ export const Carousel = () => {
 
                 {/* Teks konten untuk setiap slide */}
                 <h2
-                  className={`absolute top-1/2 left-1/2 text-5xl -translate-x-1/2 -translate-y-1/2 text-white text-center z-[30] tracking-wide ${
+                  className={`absolute top-1/2 left-1/2 text-xl md:text-5xl -translate-x-1/2 -translate-y-1/2 text-white text-center z-[30] tracking-wide ${
                     isAnimating && activeIndex === index
                       ? "bounce-in-animation"
                       : ""
