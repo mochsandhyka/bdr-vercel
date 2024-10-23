@@ -60,7 +60,7 @@ const content = {
         title: "Head Office",
         address: "Bunga Maya 16, Malang - Indonesia",
         phone: "+62341400799 / +6281336226999",
-        email: "office@dinamitarama.com (tentative)",
+        email: "official@dinamitarama.com",
         mapsUrl:
           "https://www.google.com/maps/search/?api=1&query=Bunga+Maya+16,+Malang+-+Indonesia",
       },

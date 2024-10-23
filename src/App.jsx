@@ -13,6 +13,7 @@ import { Footer } from "./component/Footer";
 import { Carousel } from "./component/Hero";
 import { Preloader } from "./component/Preloader";
 import { MapComponent } from "./component/Maps";
+import { Navbar2 } from "./component/Navbar";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <Preloader />
       <LanguageProvider>
         <div>
-          <Navbar />
+          <Navbar2 />
           <LangToggle />
           <div>
             <Carousel />

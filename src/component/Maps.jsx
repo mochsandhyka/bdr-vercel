@@ -61,11 +61,13 @@ export const MapComponent = () => {
   }, []);
 
   return (
-    <div className="bg-slate-200">
-      <div className="container pt-16 p-4 mx-auto xl:pt-8">
+    <div className="bg-slate-200 z-0">
+      <div className="container pt-16 p-4 mx-auto xl:pt-8  z-0">
         <MapContainer
           center={[-7.952226466042377, 112.62355018318105]} // Center peta pada Head Office
           zoom={10}
+          scrollWheelZoom={false}
+          className="map-container "
           style={{ height: "500px", width: "100%" }}
         >
           <TileLayer

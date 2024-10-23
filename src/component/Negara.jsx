@@ -100,7 +100,7 @@ export const NewDestination = () => {
     // Untuk Navbar
     <div
       id="destinations"
-      className=" bg-gradient-to-t from-slate-200 to-white min-h-screen p-4"
+      className=" bg-gradient-to-t from-slate-200 to-white min-h-screen p-4 pt-8"
     >
       {/* Title Berwarna Hijau */}
       <div className="container pt-16 m-4 mx-auto xl:pt-8  ">

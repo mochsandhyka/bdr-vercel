@@ -18,7 +18,7 @@ export const NewAbout = () => {
 
   return (
     <div id="about">
-      <div className="pt-16 min-h-screen bg-gradient-to-t from-white to-slate-200 dark:bg-black">
+      <div className="pt-20 min-h-screen bg-gradient-to-t from-white to-slate-200 dark:bg-black">
         {/* Title About Us */}
         <h1 className="uppercase font-black mb-3 text-center text-green-600 text-4xl">
           {language === "id" ? about.titleId : about.titleEn}

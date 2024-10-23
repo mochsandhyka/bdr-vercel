@@ -153,7 +153,7 @@ export const Carousel = () => {
 
                 {/* Title yang konsisten untuk setiap slide */}
                 <h1
-                  className={`absolute top-1/3 left-1/2 text-xs md:text-3xl font-bold text-green-400 -translate-x-1/2 -translate-y-1/2 text-center z-[30] uppercase tracking-wide transition-all duration-1000 ease-in-out ${
+                  className={`absolute top-1/3 left-1/2 text-xs md:text-3xl xl:text-xl font-bold text-green-400 -translate-x-1/2 -translate-y-1/2 text-center z-[30] uppercase tracking-wide transition-all duration-1000 ease-in-out ${
                     isAnimating && activeIndex === index
                       ? "opacity-100 translate-y-0" // Animasi masuk
                       : "opacity-0 translate-y-[-50px]" // Animasi keluar

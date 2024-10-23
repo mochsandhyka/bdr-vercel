@@ -53,6 +53,11 @@
   animation: fadeOut 0.7s forwards; /* Adjust duration as needed */
 }
 
+.map-container {
+  z-index: 0; /* Ensure it's behind other elements */
+  position: relative; /* Or static if relative is unnecessary */
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

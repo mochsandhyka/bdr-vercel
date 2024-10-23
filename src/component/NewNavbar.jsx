@@ -91,9 +91,9 @@ export function Navbar() {
   return (
     <nav
       ref={navbarRef} // Reference for detecting outside clicks
-      className={`bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 transition-all duration-300 ease-in-out ${
+      className={`bg-white dark:bg-gray-900 fixed w-full z-50 top-0 start-0 transition-all duration-300 ease-in-out ${
         scroll
-          ? "bg-gray-100 shadow-lg py-1 xl:py-4 "
+          ? "bg-gray-100 shadow-lg py-1 xl:py-4"
           : "bg-transparent py-3 xl:py-6"
       }`}
     >
