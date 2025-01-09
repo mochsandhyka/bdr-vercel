@@ -5,8 +5,9 @@ import { useEffect } from "react";
 import { FaDollarSign, FaUserTie, FaTimes } from "react-icons/fa";
 import "swiper/swiper-bundle.css";
 import { useLanguage } from "../context/LanguageContext";
-import destinations from "./data/DestinationsData";
 import CloseButton from "../component/modal/CloseButton";
+import { Button } from "../component/country/Button";
+
 import {
   GreenButton,
   Title,
@@ -17,15 +18,12 @@ import {
 const MAX_DESCRIPTION_LENGTH = 1000;
 
 const truncateDescription = (description) => {
-  const finalDescription = description;
   if (description.length > MAX_DESCRIPTION_LENGTH) {
     const truncated = description.slice(0, MAX_DESCRIPTION_LENGTH);
     const lastSpaceIndex = truncated.lastIndexOf(" ");
-    const finalDescription = truncated.slice(0, lastSpaceIndex);
-
-    return finalDescription.slice(0, MAX_DESCRIPTION_LENGTH) + "...  ";
+    return truncated.slice(0, lastSpaceIndex) + "...  ";
   }
-  return finalDescription;
+  return description;
 };
 
 export const DestinationSlider = () => {
@@ -35,7 +33,26 @@ export const DestinationSlider = () => {
 
 export const NewDestination = () => {
   const { language } = useLanguage();
+  const [destinations, setDestinations] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState(null);
+
+  useEffect(() => {
+    // Fetch data from API
+    const fetchDestinations = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/api/jobcountries");
+        const data = await response.json();
+        if (data.success) {
+          setDestinations(data.data); // Set the data to state
+        }
+      } catch (error) {
+        console.error("Error fetching destinations:", error);
+      }
+    };
+
+    fetchDestinations();
+  }, []);
+
   const [selectedJob, setSelectedJob] = useState(null); // Menyimpan pekerjaan yang dipilih
   const [selectedJobIndex, setSelectedJobIndex] = useState(null);
   useEffect(() => {
@@ -84,12 +101,16 @@ export const NewDestination = () => {
   const handleJob = (country) => {
     setSelectedCountry(country);
 
-    // Pilih pekerjaan pertama dalam daftar (jika ada)
+    // Set the first job or default to an empty state if no jobs exist
     const defaultJob =
       language === "id" ? country.requirementsId[0] : country.requirementsEn[0];
 
     setSelectedJob(defaultJob);
-    setSelectedJobIndex(0); // Menetapkan index pekerjaan pertama
+    setSelectedJobIndex(0); // Set the index to the first job
+  };
+  const [isJobVacanciesVisible, setIsJobVacanciesVisible] = useState(false);
+  const toggleJobVacancies = () => {
+    setIsJobVacanciesVisible(!isJobVacanciesVisible);
   };
 
   const closePopup = () => {
@@ -134,7 +155,7 @@ export const NewDestination = () => {
             <SwiperSlide key={index}>
               <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center">
                 <img
-                  src={country.img}
+                  src={country.img.url}
                   alt={country[language === "id" ? "nameId" : "nameEn"]}
                   className="w-full rounded-lg shadow-lg "
                 />
@@ -171,10 +192,12 @@ export const NewDestination = () => {
                       clicked={() => handleJob(country)}
                       id="Lihat Lowongan Kerja »"
                       en="View Job Vacancies »"
+                      button={true} // Use a button prop to indicate that it's a button now
                     />
                   </div>
                 </div>
               </div>
+              <Button />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -373,6 +396,43 @@ export const NewDestination = () => {
                   </div>
                 </div>
               </div>
+              {/* Button to view job vacancies */}
+              {!isJobVacanciesVisible ? (
+                <GreenButton onClick={toggleJobVacancies} className="mt-4">
+                  {language === "id"
+                    ? "Lihat Lowongan Kerjaaaa"
+                    : "View Job Vacancies"}
+                </GreenButton>
+              ) : (
+                // Display the job vacancies
+                <div className="job-vacancies">
+                  {(language === "id"
+                    ? selectedCountry.requirementsId
+                    : selectedCountry.requirementsEn
+                  ).map((job, index) => (
+                    <div key={index} className="job-vacancy-item">
+                      <h3>{job.jobName}</h3>
+                      <p>{job.jobDesc}</p>
+                      <div>
+                        <strong>Requirements:</strong>
+                        <ul>
+                          {job.jobReq.map((req, reqIndex) => (
+                            <li key={reqIndex}>{req}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <strong>Qualifications:</strong>
+                        <ul>
+                          {job.jobQualification.map((qual, qualIndex) => (
+                            <li key={qualIndex}>{qual}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
 
               {/* Tombol untuk menutup popup */}
               <CloseButton
